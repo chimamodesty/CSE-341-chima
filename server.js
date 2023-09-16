@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-app.use('/', require('./route'));
+app.use('/', require('./routes'));
 
 
 app.listen(3000, () => {
