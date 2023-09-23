@@ -1,8 +1,28 @@
 var express = require('express');
+var bodyParser = require('body-parser')
 var app = express();
-app.use('/', require('./routes'));
 
+var mongodb = require('./db/connect')
 
-app.listen(3000, () => {
-    console.log('server is running on port 3000');
-});
+var port = process.env.port || 8080
+
+app
+    .use(bodyParser.json())
+    .use((req, res, next) => {
+        res.setHeader('Access-Control-Allow-Origin','*')
+        next()
+    })
+    .use('/', require('./routes'))
+    .use('/contact', require('./routes/contacts'))
+
+mongodb.initDB((err, mongodb) => {
+    if (err) {
+        console.log(err)
+    } else {
+        app.listen(port)
+        console.log(`DB connected and server is running on port ${port}`);
+        
+    }
+
+})
+

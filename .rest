@@ -1,4 +1,15 @@
+### Lesson 01 Routes
 GET http://localhost:3000/
 
 ###
 GET https://cse-341-chima.onrender.com
+
+
+
+### Lesson 02 Routes
+
+Get http://localhost:8080/contact
+
+###
+
+GET http://localhost:8080/contact/650ed3d766b702e4fbc5bc42
