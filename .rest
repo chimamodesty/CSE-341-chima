@@ -12,4 +12,4 @@ Get http://localhost:8080/contacts
 
 ###
 
-GET http://localhost:8080/contact/650ed3d766b702e4fbc5bc42
+GET http://localhost:8080/contacts/650ed3d766b702e4fbc5bc42
