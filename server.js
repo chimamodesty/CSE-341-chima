@@ -13,7 +13,7 @@ app
         next()
     })
     .use('/', require('./routes'))
-    .use('/contact', require('./routes/contacts'))
+    .use('/contacts', require('./routes/contacts'))
 
 mongodb.initDB((err, mongodb) => {
     if (err) {
