@@ -8,7 +8,7 @@ GET https://cse-341-chima.onrender.com
 
 ### Lesson 02 Routes
 
-Get http://localhost:8080/contact
+Get http://localhost:8080/contacts
 
 ###
 
