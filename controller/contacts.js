@@ -49,9 +49,9 @@ const updateContact = async (req, res, next) => {
 
 const deleteContact = async (req, res, next) => {
     const userId = new ObjectId(req.params.id)
-
+    
     await mongodb.getDb().db().collection('contacts').deleteOne({'_id': userId})
-        .then(result => res.status(200).json(result))
+        .then(result => res.status(200).json({"deletedId": req.params.id, ...result}))
 }
 
 module.exports = {

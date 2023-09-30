@@ -45,3 +45,39 @@ Content-Type: application/json
 ### DELETE contact
 DELETE http://localhost:8080/contacts/65183ad3b983b5327101063c HTTP/1.1
 Content-Type: application/json  
+
+
+### Lesson 03 - Render.com
+
+GET https://cse-341-chima.onrender.com/contacts
+
+
+### Create Contact
+POST https://cse-341-chima.onrender.com/contacts/  HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Danice",
+    "lastName": "McKearnen",
+    "email": "dmckearnen2@mysql.com",
+    "favoriteColor": "Mauv",
+    "birthday": "07/02/2012"
+}
+
+
+### Update contact
+PUT https://cse-341-chima.onrender.com/contacts/651846be8625c2a7d610606f HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Danice",
+    "lastName": "McKearnen",
+    "email": "dmckearnen2@mysql.com",
+    "favoriteColor": "Teal",
+    "birthday": "07/22/2011"
+}
+
+
+### DELETE contact
+DELETE https://cse-341-chima.onrender.com/contacts/651846be8625c2a7d610606f HTTP/1.1
+Content-Type: application/json  
