@@ -22,7 +22,11 @@ POST http://localhost:8080/contacts/  HTTP/1.1
 content-type: application/json
 
 {
-   
+   "firstName": "Zara",
+    "lastName": "Aubrun",
+    "email": "zaubrun6@si.edu",
+    "favoriteColor": "Purple",
+    "birthday": "09/16/2005"
 }
 
 ### Update contact
@@ -30,12 +34,16 @@ PUT http://localhost:8080/contacts/65184c3cc678377750fa1021 HTTP/1.1
 Content-Type: application/json
 
 {
-  
+  "firstName": "Francis",
+    "lastName": "Aubrun",
+    "email": "zaubrun6@si.edu",
+    "favoriteColor": "Green",
+    "birthday": "09/16/2005"
 }
 
 
 ### DELETE contact
-DELETE http://localhost:8080/contacts/65188d2bb9f58da3a06742cb HTTP/1.1
+DELETE http://localhost:8080/contacts/65189147b9f58da3a06742cd HTTP/1.1
 Content-Type: application/json  
 
 
@@ -49,7 +57,11 @@ POST https://cse-341-chima.onrender.com/contacts/  HTTP/1.1
 content-type: application/json
 
 {
-    
+    "firstName": "Roxie",
+    "lastName": "Westman",
+    "email": "rwestman7@lulu.com",
+    "favoriteColor": "Purple",
+    "birthday": "04/22/1988"
 }
 
 
@@ -58,14 +70,14 @@ PUT https://cse-341-chima.onrender.com/contacts/65184b4c80d23c498533b663 HTTP/1.
 Content-Type: application/json
 
 {
-    "firstName": "Frances",
-    "lastName": "Lightoller",
-    "email": "alightoller5@upenn.edu",
-    "favoriteColor": "Pink",
-    "birthday": "08/17/2020"
+   "firstName": "Mercy",
+    "lastName": "Westman",
+    "email": "rwestman7@lulu.com",
+    "favoriteColor": "Red",
+    "birthday": "04/22/1988" 
 }
 
 
 ### DELETE contact
-DELETE https://cse-341-chima.onrender.com/contacts/65188dc10bbf9916d9fa97c1 HTTP/1.1
+DELETE https://cse-341-chima.onrender.com/contacts/651892106f948558e7412183 HTTP/1.1
 Content-Type: application/json  
