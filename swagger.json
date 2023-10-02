@@ -48,16 +48,16 @@
                 "type": "object",
                 "properties": {
                   "firstName": {
-                    "example": "any"
+                    "example": "John"
                   },
                   "lastName": {
-                    "example": "any"
+                    "example": "Doe"
                   },
                   "favoriteColor": {
-                    "example": "any"
+                    "example": "Tomato-Red"
                   },
                   "birthday": {
-                    "example": "any"
+                    "example": "mm-dd-yyy"
                   }
                 }
               }
