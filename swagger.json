@@ -68,7 +68,7 @@
     },
     "/contacts/{id}": {
       "get": {
-        "description": "",
+        "description": "Get a specific contact information from its ID",
         "parameters": [
           {
             "name": "id",
@@ -86,7 +86,7 @@
         }
       },
       "put": {
-        "description": "",
+        "description": "Update one or more contact information",
         "parameters": [
           {
             "name": "id",
@@ -104,10 +104,33 @@
           "400": {
             "description": "Bad Request"
           }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "firstName": {
+                    "example": "John"
+                  },
+                  "lastName": {
+                    "example": "Doe"
+                  },
+                  "favoriteColor": {
+                    "example": "Tomato-Red"
+                  },
+                  "birthday": {
+                    "example": "mm-dd-yyy"
+                  }
+                }
+              }
+            }
+          }
         }
       },
       "delete": {
-        "description": "",
+        "description": "Remove a contact from the list of contact",
         "parameters": [
           {
             "name": "id",
